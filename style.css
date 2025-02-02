@@ -106,10 +106,10 @@ legend{
 
 .inputUser:focus ~ .labelInput,
 .inputUser:valid ~ .labelInput{
-    top: -15px;
+    top: -17px;
     left: 0;
     color: dodgerblue;
-    font-size: 15px;
+    font-size: 13px;
     pointer-events: none;
     
 }
