@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+   
+}
+
+.box{
+    position: relative;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200%;
+    background-image: linear-gradient(180deg, aqua,purple,aqua,purple);
+    animation: border 3s linear infinite;
+}
+
+@keyframes border {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200%;
+    border-radius: 10px;
+    background-color: #000;
+    inset: 5px;
+    left: 35%;
+    top: -50%;
+    z-index: -1;
+}
+
+fieldset{
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    background-color: #000;
+    border:none;
+    border: 1px solid #000;
+    padding: 1rem 0 0;
+    
+}
+
+legend{
+    text-align: center;
+}
+
+.inputBox{
+    position: relative;
+    margin: 1.5rem 1rem;
+    color: #fff;
+    
+}
+
+
+.inputUser{
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid dodgerblue;
+    width: 100%;
+    color: #fff;
+    
+}
+
+.labelInput{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s linear;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -15px;
+    left: 0;
+    color: dodgerblue;
+    font-size: 15px;
+    pointer-events: none;
+    
+}
+
+
+.genero{
+    margin: 10px ;
+    padding: 0.5rem;
+}
+
+.genero p {
+    padding-bottom: 0.5rem;
+    text-align: left;
+    
+}
+
+#submit{
+    width: 80%;
+    border-radius: 4px;
+    padding: 7px ;
+    transition: 0.3s ease-in-out;
+    border: none;
+    outline: none;
+    margin:0 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+#submit:hover{
+    background-color:dodgerblue;
+    color: #fff;
+}
+
+.dataNasc{
+    padding: 0 1rem;
+    
+}
+
+#dataNascimento{
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 768px) and (min-width:500) {
+    .container, .box{
+        width: 100%;
+        height: 100vh;
+         
+    }
+}

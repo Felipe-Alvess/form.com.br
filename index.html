@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <!-- todo o conteúdo do container-->
+    <div class="container">
+        <!-- class box com todo o conteúdo -->
+        <div class="box">
+            <!-- form -->
+            <form action="##" method="post">
+                <fieldset>
+                   
+                    <div class="inputBox">
+                        <input class="inputUser" type="text" name="name" id="name" required>
+                        <label class="labelInput" for="nome">Nome</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input class="inputUser" type="text" name="email" id="email" required>
+                        <label class="labelInput" for="nome">Email</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input class="inputUser" type="password" name="password" id="password" required>
+                        <label class="labelInput" for="nome">Senha</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input class="inputUser" type="tel" name="telephone" id="telephone" required>
+                        <label class="labelInput" for="nome">Telefone</label>
+                    </div>
+
+                    <div class="genero">
+                        <p>Gênero</p>
+                        <input type="radio" name="genero" id="feminino" value="feminino">
+                        <label for="feminino">Feminino</label>
+
+                        <input type="radio" name="genero" id="masculino" value="masculino">
+                        <label for="masculino">Masculino</label>
+
+                        <input type="radio" name="genero" id="outro" value="outro">
+                        <label for="outro">Outro</label>
+                    </div>
+                    <div class="dataNasc">
+                        <label for="dataNascimento">Data de Nascimento</label>
+                        <input type="date" name="dataNascimento" id="dataNascimento" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <input class="inputUser" type="text" name="endereco" id="endereco" required>
+                        <label class="labelInput" for="endereco">Endereço</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input class="inputUser" type="text" name="cidade" id="cidade" required>
+                        <label class="labelInput" for="cidade">Cidade</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input class="inputUser" type="text" name="estado" id="estado" required>
+                        <label class="labelInput" for="estado">Estado</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input class="inputUser" type="text" name="nacionalidade" id="nacionalidade" required>
+                        <label class="labelInput" for="nacionalidade">País</label>
+                    </div>
+
+                    <input type="submit" value="submit" id="submit">
+                </fieldset>
+            </form>
+            <!-- form -->
+        </div>
+        <!-- class box com todo o conteúdo -->
+    </div>
+    <!-- todo o conteúdo container-->
+</body>
+
+</html>
